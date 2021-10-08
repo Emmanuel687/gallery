@@ -1,9 +1,14 @@
-from django.urls import path
+from django.conf.urls import url 
 from .import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     # path('home/',getHomePage),
-    path('images/',views.images,name="images"),
+    url(r'^$',views.welcome,name='index'),
+    url(r'^search/',views.search,name='search_results'),
+    url(r'^images/(\d+)',views.image,name='image'),
+    url(r'^location/',views.location,name='location'),
 ]
+# if settings.DEBUD:
+#     urlpatterns+=static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
