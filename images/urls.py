@@ -7,8 +7,8 @@ urlpatterns = [
     # path('home/',getHomePage),
     url(r'^$',views.welcome,name='index'),
     url(r'^search/',views.search,name='search_results'),
-    url(r'^images/(\d+)',views.image,name='image'),
-    url(r'^location/',views.location,name='location'),
+    # url(r'^images/(\d+)',views.image,name='image'),
+    # url(r'^location/',views.location,name='location'),
 ]
 # if settings.DEBUD:
 #     urlpatterns+=static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
