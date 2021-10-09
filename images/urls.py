@@ -7,7 +7,7 @@ urlpatterns = [
     # path('home/',getHomePage),
     url(r'^$',views.welcome,name='index'),
     url(r'^search/',views.search,name='search_results'),
-    url(r'^images/(\d+)',views.image,name='image'),
+    url(r'^images/(\d+)',views.image,name='images'),
     url(r'^location/',views.location,name='location'),
 ]
 if settings.DEBUG:
