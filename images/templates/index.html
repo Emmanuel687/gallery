@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for image in images %}
 <div class="container">
     <div class="row">
         <div class="col-xs-18 col-sm-6 col-md-3">
@@ -7,3 +12,39 @@
         <!-- <p>{{image.desc}}</p> -->
     </div>
     </div>
+    <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content modalcard">
+            <!-- <div class="modal-header">
+                
+            </div> -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid" width="350">
+                </div>
+                <div class="col-md-4">
+                <span class="btn btn-sm btn-outline-success">Category: <i><b>{{image.category}}</b></i></span>
+                <span class="btn btn-sm btn-outline-success">Location: <i><b>{{image.loc}}</b></i></span> 
+            </div>
+        </div>
+            <h5 class=""><b>{{image.name}}</b></h5>
+            <p class="imgdesc text-center">{{image.desc}}</p>
+            
+            </div>
+            <div class="modal-footer">
+                <input class="form-control input-lg" type="text"
+                       value="{{image.image.url}}" id="{{image.id}}.url">
+                <button class="btn btn-success btn-sm" onclick="copyLink('{image.image.url')">Copy</button>
+                <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+</div>
+
+{%endblock%}  
