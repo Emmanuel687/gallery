@@ -27,11 +27,11 @@ class Category(models.Model):
         self.delete()
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='image/',default="image")
     name = models.CharField(max_length=100)
     desc = models.TextField()
     loc =  models.ForeignKey(Location,on_delete=models.CASCADE)
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    title = models.CharField(max_length=100)
     image = CloudinaryField('image')
 
     def __str__(self):
