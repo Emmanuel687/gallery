@@ -3,9 +3,10 @@
 {% block content %}
 
 {% for image in images %}
-<div class="container">
-    <div class="row">
-        <div class="col-xs-18 col-sm-6 col-md-3">
+
+<div class="container" id="images">
+    <div class="row" id="share">
+        <div class="col-md-6" >
             <div class="thumbnail" data-toggle="modal" data-target="#{{image.id}}" style="width:300px; height: 300px;">
                 <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid img-thumbnail"
                     style="width:280px; height: 200px;">
@@ -21,10 +22,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid" width="350">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <span class="btn btn-sm btn-outline-success">Category:
                                 <i><b>{{image.category}}</b></i></span>
                             <span class="btn btn-sm btn-outline-success">Location: <i><b>{{image.loc}}</b></i></span>
