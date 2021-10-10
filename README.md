@@ -2,7 +2,7 @@
 This is a Gallery project which shows several pictures in my collection.Once you click any picture, you will be able to find all its description there. You can also decide to search for the location where a particular image was taken, that is, by using the search form then clicking the search button.
 
 ## screenshot-images
-<img src="./Gallery/static/images/screenshot.png">
+<img src="static/images/screenshot.png">
 
 ## Author 
 * Shalin Rono
