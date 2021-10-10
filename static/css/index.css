@@ -3,8 +3,8 @@ h1{
 }
 body{
     background-color: rgb(12, 0, 0);
-    color: rgb(224, 212, 224);
-    font-size: 30px;
+    color: rgb(243, 237, 243);
+    font-size: 15px;
     /* overflow-x: hidden; */
 }
 /* .thumbnail {
@@ -15,15 +15,15 @@ body{
     flex-direction: column-reverse;
     background-color: rgb(7, 6, 6);
 } */
-/* #images{
+#images{
     background-color: rgb(59, 1, 16);
     color: ghostwhite; 
     display: grid;
-    flex-direction: row; */
-    /* grid-template-columns: repeat(8, 1fr);
+    flex-direction: row;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 40px; */
-    /* display: flex;
+    grid-gap: 40px;
+    display: flex;
     flex-direction: row;
     flex-flow: row-column;
     gap: 10px;
@@ -31,8 +31,8 @@ body{
     row-gap: 10px;
     column-gap: 20px;
     order: 3; 
-    flex-basis: auto; */
-
+    flex-basis: auto;
+}
     
 
 /* #share{
@@ -41,9 +41,9 @@ body{
     flex-direction: column;
 
 } */
-#images{
+/* #images{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     order: 3;
-}
+} */
