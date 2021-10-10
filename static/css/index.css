@@ -40,8 +40,8 @@ body{
     justify-content: space-between;
     flex-direction: column;
 
-} */
-/* #images{
+}
+#images{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

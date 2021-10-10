@@ -53,7 +53,6 @@ E_MAIL -ronoshalin@gmail.com
 Project Link: [https://github.com/sha-lin/gallery](https://github.com/sha-lin/gallery)
 
 ## License
-https://choosealicense.com/licenses/mit/#
 
 # **Copyright**
 Copyright (c) {2021} **SHALIN RONO**
